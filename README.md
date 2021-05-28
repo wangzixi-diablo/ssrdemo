@@ -29,3 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Local project path
 
 C:\Code\SPA\jerryssr
+
+[our assignment](https://sap-my.sharepoint.com/:x:/p/louis_pierrestiger/EV2oooUwuzVFl5-tD__jQ_kBfZZddFEPaSWMQ0miGlrI9g?e=OIsLQ9)
+
