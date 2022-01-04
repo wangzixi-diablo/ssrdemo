@@ -6,6 +6,7 @@ import { StoreModule } from "@ngrx/store";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SpartacusModule } from './spartacus/spartacus.module';
+import { JerryProductImagesModule } from './cms-components/product/jerry-product-image/jerry-product-images.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     SpartacusModule,
-  BrowserTransferStateModule
+    BrowserTransferStateModule,
+    JerryProductImagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

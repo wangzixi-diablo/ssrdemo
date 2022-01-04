@@ -17,4 +17,4 @@ ensure the whole html source code are generated in server side.
 
 <img width="944" alt="clipboard3" src="https://user-images.githubusercontent.com/58975336/148010418-f516d3db-2ee8-4e73-bc9d-007aa1414b70.png">
 
-
+- this repo is used to demo how to achieve [component lazyload](https://jerry.blog.csdn.net/article/details/122302032).
