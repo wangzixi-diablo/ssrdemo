@@ -18,7 +18,7 @@ import { SpartacusModule } from './spartacus/spartacus.module';
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
     SpartacusModule,
-    BrowserTransferStateModule
+  BrowserTransferStateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

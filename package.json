@@ -9,8 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run jerryssr:serve-ssr",
-    "serve:ssr": "node dist/jerryssr/server/main.js",
+    "ssrdebug": "node --inspect-brk dist/jerryssr/server/main.js",
     "build:ssr": "ng build --prod && ng run jerryssr:server:production",
+    "build:ssr:dev": "ng build && ng run jerryssr:server",
     "prerender": "ng run jerryssr:prerender"
   },
   "private": true,

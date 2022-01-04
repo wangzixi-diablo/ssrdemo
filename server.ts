@@ -9,9 +9,10 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
-const ngExpressEngine = NgExpressEngineDecorator.get(engine, { timeout: 0 });
+const ngExpressEngine = NgExpressEngineDecorator.get(engine, { timeout: 3000000, debug: true });
 
 // The Express app is exported so that it can be used by serverless Functions.
+// Jerry i042416
 export function app() {
   const server = express();
   const distFolder = join(process.cwd(), 'dist/jerryssr/browser');
@@ -39,7 +40,7 @@ export function app() {
     })
   );
 
-  // All regular routes use the Universal engine
+  // All regular routes use the Universal engine by Jerry
   server.get('*', (req, res) => {
     res.render(indexHtml, {
       req,

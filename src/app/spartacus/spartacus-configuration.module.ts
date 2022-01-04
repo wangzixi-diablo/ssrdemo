@@ -3,6 +3,16 @@ import { translationChunksConfig, translations } from "@spartacus/assets";
 import { FeaturesConfig, I18nConfig, OccConfig, provideConfig, SiteContextConfig } from "@spartacus/core";
 import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacus/storefront";
 
+const result = provideConfig(layoutConfig);
+
+console.log('Jerry: ', result);
+
+//result.useValue.layoutSlots.header.lg.slots = [];
+
+function getConfigu(){
+  console.log('Ethan2');
+  return 'cms/pages';
+}
 @NgModule({
   declarations: [],
   imports: [
@@ -11,6 +21,12 @@ import { defaultCmsContentProviders, layoutConfig, mediaConfig } from "@spartacu
     backend: {
       occ: {
         baseUrl: 'https://spartacus-demo.eastus.cloudapp.azure.com:8443/',
+        endpoints: {
+          component: 'cms/components/${id}',
+          components: 'cms/components',
+          pages: getConfigu(),
+          page: 'cms/pages/${id}',
+        },
       }
     },
   }), provideConfig(<SiteContextConfig>{
